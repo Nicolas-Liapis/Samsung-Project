@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Samsung Project</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto:400,500,700,900" rel="stylesheet"> -->
+  </head>
+  <body onload="showVenue()">
+      <header id="header-sec">
+          <img id="samsung-sec" src="src/samsungblue-logo.png" alt="samsung-logo">
+          <img id="logo-sec" src="bound.png" alt="event-logo">
+      </header>
+      <nav>
+        <ul>
+          <li><a id="venue-btn" class="white-menu" onclick="showVenue()">Venue</a></li>
+          <li><a id="trans-btn" class="white-menu" onclick="showTrans()">Transport</a></li>
+          <li><a id="faq-btn" class="white-menu" onclick="showFaq()">FAQ/Contact Us</a></li>
+        </ul>
+      </nav>
+      <main>
+
+        <article class="slideshow">
+          <div class="mySlides" id="venue">
+            <img class="slides" src="thorpe-park.jpg" alt="map">
+            <p class="orange-slide">Thorpe Park</p>
+              <p class="white-p">Thorpe Park is just 20 miles from Central London. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Fusce eu tellus nec
+                augue condimentum pulvinar.  <br><br> Sed lobortis gravida eros at eleifend.
+                Morbi orci magna, pellentesque at laoreet non.
+              </p>
+            
+          </div>
+          <div class="mySlides" id="trans">
+            <img class="slides" src="map.png" alt="map">
+            <p class="orange-slide">By Car</p>
+              <p class="white-p">Thorpe Park is just 20 miles from Central London. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Fusce eu tellus nec
+                augue condimentum pulvinar.  <br><br> Sed lobortis gravida eros at eleifend.
+                Morbi orci magna, pellentesque at laoreet non.
+              </p>
+            <p class="orange-slide">Public Transport</p>
+            <p class="white-p">Thorpe Park is just 20 miles from Central London. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Fusce eu tellus nec
+              augue condimentum pulvinar.
+            </p>
+            <p class="white-p">For any other information please <a class="link" href="venue.html" class="submit-button">contact us</a>.
+            </p>
+          </div>
+          <div class="mySlides" id="faq">
+            <!-- <img class="slides" src="map.png" alt="map"> -->
+            <!-- <p class="orange-slide">By Car</p>
+              <p class="white-p">Thorpe Park is just 20 miles from Central London. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Fusce eu tellus nec
+                augue condimentum pulvinar.  <br><br> Sed lobortis gravida eros at eleifend.
+                Morbi orci magna, pellentesque at laoreet non.
+              </p>
+            <p class="orange-slide">Public Transport</p>
+            <p class="white-p">Thorpe Park is just 20 miles from Central London. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Fusce eu tellus nec
+              augue condimentum pulvinar.
+            </p> -->
+            <!-- <p class="white-p">For any other information please <a class="link" href="venue.html" class="submit-button">contact us</a>.
+            </p> -->
+          </div>
+        </article>
+      </main>
+      <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+$background-purple: #3d1980;
+$font-orange: #f4d68b;
+$font-white: #fefdfa;
+$font-red: #d9482b;
+$back-purple: #c63b9b;
+$font-small: .7em;
+$font-medium: .9em;
+$font-big: 1.1em;
+
+// GENERAL
+
+a {
+  text-decoration: none;
+  cursor: move;
+}
+
+
+// MAIN HEADER-BODY
+header {
+  margin-top: 7em;
+}
+#header-main {
+  margin-top: 5em;
+}
+
+#header-sec {
+  margin-top: 1em;
+}
+
+body {
+  background-image: url("../background.jpg");
+}
+
+form {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#samsung-main {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+#logo-main {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+#logo-sec {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.slides {
+  width: 90%;
+  height: 10em;
+  display: block;
+  margin: auto;
+  border: 1px solid $font-orange;
+}
+
+#samsung-sec {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.slideshow {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+//FONTS INPUTS BUTTONS
+
+.input-login {
+  height: 1.3em;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1em;
+}
+
+.orange {
+  color: $font-orange;
+  font-family: Arial;
+  font-size: $font-medium;
+  text-align: center;
+}
+
+.orange-slide {
+  color: $font-orange;
+  font-family: Arial;
+  font-size: $font-medium;
+  text-align: left;
+  margin: 1em;
+}
+
+.white {
+  color: $font-white;
+  font-family: Arial;
+  font-size: $font-small;
+  text-align: center;
+}
+
+.white-p {
+  color: $font-white;
+  font-family: Arial;
+  font-size: $font-medium;
+  text-align: left;
+  margin-left: 1em;
+}
+
+.white-sec {
+  color: $font-white;
+  font-family: Arial;
+  font-size: $font-medium;
+  text-align: left;
+  margin-bottom: 0.2em;
+}
+
+.white-note {
+  color: $font-white;
+  font-family: Arial;
+  font-size: $font-small;
+  text-align: left;
+}
+
+.white-menu {
+  color: $font-white;
+  font-family: Arial;
+  font-size: $font-medium;
+  text-align: center;
+}
+
+#alert {
+  color: $font-red;
+  font-family: Arial;
+  font-size: $font-small;
+  display: none;
+}
+
+.submit-button {
+    background-color: $back-purple;
+    width: 6em;
+    border: none;
+    border-radius: 45px;
+    color: $font-white;
+    padding: .1em 0em;
+    text-align: center;
+    display: block;
+    font-family: Arial;
+    font-size: $font-medium;
+    margin: 2em auto;
+}
+
+//MENU SLIDESHOW
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    border-right: 1px solid $font-white;
+    text-align: center;
+    margin: 1em 0em;
+    width: 7em;
+    height: 1.4em;
+    cursor: pointer;
+}
+
+ul>li:first-child{
+   padding-right: .2em;
+}
+
+ul>li:last-child{
+   border: none;
+   margin: 1em;
+}
+
+.link {
+  text-decoration: underline;
+  color: $font-white;
+  font-weight: bold;
+}
+
+.mySlides {
+  display: none;
+}
