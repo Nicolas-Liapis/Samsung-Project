@@ -21,6 +21,7 @@ function showTrans(){
 function showFaq() {
   document.getElementById('venue').style.display = "none";
   document.getElementById('trans').style.display = "none";
+  document.getElementById('faq').style.display = "block";
   document.getElementById('faq-btn').style.color = "#c63b9b";
   document.getElementById('venue-btn').style.color = "#fefdfa";
   document.getElementById('trans-btn').style.color = "#fefdfa";
