@@ -202,3 +202,25 @@ ul>li:last-child{
 .mySlides {
   display: none;
 }
+
+$information-phone: "only screen and (min-width : 768px)";
+
+@media #{$information-phone} {
+  #header-main {
+    margin-top: 1em;
+    max-width: 60%;
+  }
+
+  // #samsung-main {
+  //   width: 20%;
+  //   display: block;
+  //   margin: 0 auto;
+  //   margin-bottom: 2em;
+  // }
+  //
+  // #logo-main {
+  //   width: 50%;
+  //   display: block;
+  //   margin: auto;
+  // }
+}

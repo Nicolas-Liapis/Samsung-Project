@@ -44,14 +44,16 @@ function validateForm() {
 function filled() {
   var check = document.getElementsByTagName('input');
   var length = check.length;
+  var counter = 0;
 
   for (var i=0; i<length; i++) {
     if (check[i].value === "") {
       check[i].style.border = "2px solid #d9482b";
     } else if (check[i].value != "") {
       check[i].style.border = "2px solid #6be76d";
-
-    } else {
+      counter++
+    }
+    if (counter == 7) {
       document.getElementById('submit-btn').setAttribute("href", "venue.html");
     }
   }
