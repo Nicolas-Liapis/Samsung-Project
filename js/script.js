@@ -39,11 +39,22 @@ function validateForm() {
       document.getElementById('enter-btn').setAttribute("href", "thanks.html");
     }
 }
-// function checkFill() {
-//
-// if (document.getElementById('filled').value == "") {
-//     document.getElementById('filled').style.border = "2px solid #d9482b";
-//   } else {
-//     document.getElementById('submit-btn').setAttribute("href", "venue.html");
-//   }
-// }
+
+function filled() {
+  var check = document.getElementsByTagName('input');
+  var length = check.length;
+
+  for (var i=0; i<length; i++) {
+    if (check[i].value === "") {
+      check[i].style.border = "2px solid #d9482b";
+    } else if (check[i].value != "") {
+      check[i].style.border = "2px solid #6be76d";
+
+    } else {
+      document.getElementById('submit-btn').setAttribute("href", "venue.html");
+    }
+  }
+
+
+
+}
