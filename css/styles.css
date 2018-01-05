@@ -226,6 +226,11 @@ ul > li:last-child {
       display:block;
     }
 
+    .log {
+      margin: 0 16em;
+
+    }
+
     .submit-button {
       width: 9em;
       padding: .5em 0em;
