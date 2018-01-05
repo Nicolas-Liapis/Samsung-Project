@@ -237,6 +237,10 @@ ul > li:last-child {
 
     }
 
+    #alert {
+      margin-left: 45%;
+    }
+
     #delegates {
       width: 100%;
       display: flex;
