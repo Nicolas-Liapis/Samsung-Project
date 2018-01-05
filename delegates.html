@@ -9,32 +9,74 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto:400,500,700,900" rel="stylesheet"> -->
   </head>
   <body>
-      <header id="header-sec">
-          <img id="samsung-sec" src="samsungblue-logo.png" alt="samsung-logo">
-          <img id="logo-sec" src="bound.png" alt="event-logo">
+      <header id="header-sec" class="flex-header">
+          <img id="samsung-sec" class="flex-logo flex-col-3" src="samsungblue-logo.png" alt="samsung-logo">
+          <img id="logo-sec" class="flex-logo center flex-col-3" src="bound.png" alt="event-logo">
+          <div class="flex-col-3"></div>
       </header>
       <main>
-        <form action="venue.html" name="delegates">
-          <p class="orange">You are invited to attend Samsung Backstage Elite Unbound at XXX on DATEXXX</p>
-          <p class="white-sec">Title</p>
-          <input id="filled" class="input-login" type="title" name="title" size="30">
-          <p class="white-sec">First Name</p>
-          <input class="input-login" type="text" name="firstName" size="30">
-          <p class="white-sec">Last Name</p>
-          <input class="input-login" type="text" name="lastName" size="30">
-          <p class="white-sec">Employee Number</p>
-          <input class="input-login" type="text" name="employeeNum" size="30">
-          <p class="white-sec">Store Location</p>
-          <input class="input-login" type="text" name="storeLoc" size="30">
-          <p class="white-sec">Email</p>
-          <input class="input-login" type="email" name="email" size="30">
-          <p class="white-sec">Contact number</p>
-          <input class="input-login" type="number" name="telNum" size="30">
-          <p class="white-note">*Please note this will not be used for marketing
-            or any other purposes, other than to contact you in regards to the event.</p>
-            <p class="white">All fields are mandatory*</p>
-          <a id="submit-btn" href="#venue.html" class="submit-button" onclick="filled()">Enter</a>
+        <div class="flexbox-row">
+          <form action="venue.html" name="delegates">
+            <p class="orange">You are invited to attend Samsung Backstage Elite Unbound at XXX on DATEXXX</p>
+            <div class="flexbox-col">
+              <p class="white-sec">Title</p>
+              <input class="input-login flex" type="title" name="title" size="30">
+              <p class="white-sec">First Name</p>
+              <input class="input-login flex" type="text" name="firstName" size="30">
+              <p class="white-sec">Last Name</p>
+              <input class="input-login flex" type="text" name="lastName" size="30">
+              <p class="white-sec">Employee Number</p>
+              <input class="input-login flex" type="text" name="employeeNum" size="30">
+            </div><div class="vline"></div>
+            <div class="flexbox-col">
+              <p class="white-sec">Store Location</p>
+              <input class="input-login flex" type="text" name="storeLoc" size="30">
+              <p class="white-sec">Email</p>
+              <input class="input-login flex" type="email" name="email" size="30">
+              <p class="white-sec">Contact number</p>
+              <input class="input-login flex" type="number" name="telNum" size="30">
+              <p class="white-note flex-text">*Please note this will not be used for marketing
+                or any other purposes, other than to contact you in regards to the event.
+              </p>
+            </div>
+            <div class="extra">
+              <div class="vline"></div>
+              <div class="flexbox-col">
+                <p class="white-sec">Are you able to attend Samsung Backstage Elite Unbound at XXX</p>
+                <div class="checkbox">
+                  <span class="white-check">Yes</span><input class="boxy" type="radio" name="attend" value="Yes">
+                  <span class="white-check">No</span><input class="boxy" type="radio" name="attend" value="No">
+                </div>
+                <p class="white-sec">We will be providing refreshements and lunch on the day. Do you have any
+                                      dietary requirements you would like us to consider</p>
+                <div class="checkbox">
+                  <span class="white-check">Yes</span><input class="boxy" type="radio" name="attend" value="Yes">
+                  <span class="white-check">No</span><input class="boxy" type="radio" name="attend" value="No">
+                </div>
+              </div><div class="vline"></div>
+              <div class="flexbox-col">
+                <p class="white-sec">Do you have any access requirements you would like us to consider</p>
+                <div class="checkbox">
+                  <span class="white-check">Yes</span><input class="boxy" type="radio" name="attend" value="Yes">
+                  <span class="white-check">No</span><input class="boxy" type="radio" name="attend" value="No">
+                </div>
+                <p class="white-sec">Elites travelling long distances may be eligible for accomodation the night
+                                      before the event - would you like to request a hotel room?</p>
+                <div class="checkbox">
+                  <span class="white-check">Yes</span><input class="boxy" type="radio" name="attend" value="Yes">
+                  <span class="white-check">No</span><input class="boxy" type="radio" name="attend" value="No">
+                </div>
+                <p class="white-note flex-text">*Please note this does not guarantee a room and once
+                                                  we receive your request we will confirm if you are eligible
+                </p>
+              </div>
+            </div>
+          </div>
+            <p class="white large">All fields are mandatory*</p>
+          <a id="submit-btn" href="#venue.html" class="submit-button" onclick="filled()">Submit</a>
         </form>
+
+
       </main>
       <script src="js/script.js"></script>
   </body>

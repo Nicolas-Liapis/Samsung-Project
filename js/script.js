@@ -53,7 +53,7 @@ function filled() {
       check[i].style.border = "2px solid #6be76d";
       counter++
     }
-    if (counter == 7) {
+    if (counter == length) {
       document.getElementById('submit-btn').setAttribute("href", "venue.html");
     }
   }

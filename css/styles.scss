@@ -16,9 +16,7 @@ a {
 
 
 // MAIN HEADER-BODY
-header {
-  margin-top: 7em;
-}
+
 #header-main {
   margin-top: 5em;
 }
@@ -34,6 +32,12 @@ body {
 form {
   margin: 0 auto;
   width: 60%;
+}
+
+#extra {
+  display: none;
+  background-color: red;
+
 }
 
 #samsung-main {
@@ -74,6 +78,41 @@ form {
   max-width: 90%;
   position: relative;
   margin: auto;
+}
+
+//CHECKBOXES
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $font-white;
+  
 }
 
 //FONTS INPUTS BUTTONS
@@ -120,7 +159,7 @@ form {
   font-family: Arial;
   font-size: $font-medium;
   text-align: left;
-  margin-bottom: 0.2em;
+  margin: 0.2em;
 }
 
 .white-note {
@@ -193,34 +232,7 @@ ul>li:last-child{
   font-weight: bold;
 }
 
-// #faq {
-//   display: flex;
-//   flex-direction: column;
-//
-// }
 
 .mySlides {
   display: none;
-}
-
-$information-phone: "only screen and (min-width : 768px)";
-
-@media #{$information-phone} {
-  #header-main {
-    margin-top: 1em;
-    max-width: 60%;
-  }
-
-  // #samsung-main {
-  //   width: 20%;
-  //   display: block;
-  //   margin: 0 auto;
-  //   margin-bottom: 2em;
-  // }
-  //
-  // #logo-main {
-  //   width: 50%;
-  //   display: block;
-  //   margin: auto;
-  // }
 }
