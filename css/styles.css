@@ -34,7 +34,7 @@ form {
 
 .slides {
   width: 90%;
-  height: 10em;
+  height: auto;
   display: block;
   margin: auto;
   border: 1px solid #f4d68b; }
@@ -81,6 +81,16 @@ form {
   font-size: 0.9em;
   text-align: left;
   margin-left: 1em; }
+
+  .white-p1 {
+    color: #fefdfa;
+    font-family: Arial;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: -.8em;
+    padding: 0;
+  }
 
 .white-sec {
   color: #fefdfa;
@@ -303,6 +313,24 @@ ul > li:last-child {
       max-width: 24em;
       padding-left: 10em;
     }
+
+    #main-venue {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .slideshow {
+      width: 85%;
+      margin-top: 2em;
+    }
+
+    .flex-slide {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      width: 49%;
+    }
+
 
 }
 
